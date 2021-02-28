@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+          width: 100%;
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        div {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+
+        h3{
+            text-align: center;
+        }
+        </style>
+        <body>
+        
+        <h3 class="tit"  >boston data prediction</h3>
+        
+        <div>
+          <form   action= "{{ url_for('home') }}" method="post" >
+            <label for="fname">CRIM</label>
+            <input type="text" id="fname" name="CRIM" placeholder="CRIM..">
+            <label for="lname">ZN</label>
+            <input type="text" id="lname" name="ZN" placeholder="ZN..">
+            <label for="lname">INDUS</label>
+            <input type="text" id="lname" name="INDUS" placeholder="INDUS..">
+            <label for="lname">CHAS</label>
+            <input type="text" id="lname" name="CHAS" placeholder="CHAS..">
+            <label for="lname">NOX</label>
+            <input type="text" id="lname" name="NOX" placeholder="NOX..">
+            <label for="lname">RM</label>
+            <input type="text" id="lname" name="RM" placeholder="RM..">
+            <label for="lname">AGE</label>
+            <input type="text" id="lname" name="AGE" placeholder="AGE..">
+            <label for="lname">DIS</label>
+            <input type="text" id="lname" name="DIS" placeholder="DIS..">
+            <label for="lname">RAD</label>
+            <input type="text" id="lname" name="RAD" placeholder="RAD..">
+            <label for="lname">TAX</label>
+            <input type="text" id="lname" name="TAX" placeholder="TAX..">
+            <label for="lname">PTRATIO</label>
+            <input type="text" id="lname" name="PTRATIO" placeholder="PTRATIO ..">
+            <label for="lname">B</label>
+            <input type="text" id="lname" name="B" placeholder="B..">
+            <label for="lname">LSTAT</label>
+            <input type="text" id="lname" name="LSTAT" placeholder="LSTAT..">
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        <h3>{{pred}}</h3>
+        
+        </body>
+
+</html>
+
+
